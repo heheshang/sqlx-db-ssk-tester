@@ -1,0 +1,18 @@
+[package]
+name = "sqlx-db-ssk-tester"
+version = "0.1.0"
+authors = ["s Shang <ssk1820155@gmail.com>"]
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/sqlx-db-ssk-tester"
+repository = "https://github.com/heheshang/sqlx-db-ssk-tester"
+homepage = "https://github.com/heheshang/sqlx-db-ssk-tester"
+description = """ A simple tool to test sqlx with postgres , It will automatically create a database and a table for testing. and drop the database after testing. """
+readme = "README.md"
+categories = ["development-tools"]
+keywords = ["sqlx", "postgres", "database", "test"]
+
+[dependencies]
+sqlx = { version = "0.6.2", features = ["runtime-tokio-rustls", "postgres"] }
+tokio = { version = "1.22.0", features = ["rt", "rt-multi-thread", "macros"] }
+uuid = { version = "1.2.2", features = ["v4"] }
