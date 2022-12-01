@@ -111,13 +111,7 @@ mod tests {
 
     #[tokio::test]
     async fn test_db_should_create_and_drop() {
-        let tdb = TestDb::new(
-            "localhost",
-            15432,
-            "postgres",
-            "7cOPpA7dnc",
-            "/opt/soft/sqlx-db-ssk-tester/migrations",
-        );
+        let tdb = TestDb::new("localhost", 15432, "postgres", "7cOPpA7dnc", "./migrations");
         let pool = tdb.get_pool().await;
         println!("Pool: {:?}", pool);
 
