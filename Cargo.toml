@@ -1,6 +1,6 @@
 [package]
 name = "sqlx-db-ssk-tester"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["s Shang <ssk1820155@gmail.com>"]
 edition = "2021"
 license = "MIT"
